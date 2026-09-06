@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Event Registration Form</h2>
+<form onsubmit="return validateForm()">
+First Name:
+<input type="text" id="fname" required><br><br>
+Last Name:
+<input typr="text" id="lname" required><br><br>
+DOB:
+<input type="date" id="dob" required><br><br>
+Gender:
+<input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female
+<br><br>
+Father Name:
+<input type="text" id="father" required><br><br>
+Mother Name:
+<input typr="text" id="mother" required><br><br>
+Phone number:
+<input type="text" id="phone" placeholder="9 digits" required>
+<br><br>
+Email-id:
+<input type="text" id="email" required>
+<br><br>
+Address:
+<textarea id="address" rows="3" cols="30" required></textarea>
+<br><br>
+<h3>Education details</h3>
+<table border="1">
+<tr>
+<th>Qualification</th>
+<th>Institution</th>
+<th>Year</th>
+<th>Percentage</th>
+</tr>
+<tr>
+<td>10th</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>12th</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Degree</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+</table>
+<br>
+Photo:
+<input type="file" id="photo" accept="image/*" required>
+<br><br>
+Signature:
+<input type="file" id="sign" accept="image/*" required>
+<br><br>
+<input type="submit" value="Register">
+<input type="reset" value="Clear">
+</form>
+<script src="script.js"></script>
+</body>
+</html>
